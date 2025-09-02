@@ -6,7 +6,11 @@ import numpy as np
 R = 200 # Resistance (Ohms)
 L = 5 # Inductance (Henries)
 C = 0.0001 # Capacitance (Farads)
-V = 0 # DC Voltage Source (Volts) - Set to 0 for natural response
+
+# AC Source Parameters
+V_peak = 120 # Amplitude - Set to zero for natural response
+freq = 60 # Frequency (Hertz) - Set to zero for DC Voltage Source
+w0 = 2 * np.pi * freq # Angular Frequency
 
 # Initial conditions (t = 0)
 i0 = 0 #current
@@ -22,7 +26,7 @@ tf = 0.5 # Final time
 dt = 0.0001 # Increment
 num_steps = int((tf-t0)/dt)
 
-#Creating Array
+# Creating Arrays
 t_values = np.linspace(t0, tf, num_steps + 1)
 i_values = np.zeros(num_steps + 1)
 q_values = np.zeros(num_steps + 1)
@@ -30,6 +34,11 @@ i_values[0] = i0
 q_values[0] = q0
 
 for k in range(0, num_steps):
+
+    # Voltage Source
+    V = V_peak * np.cos(w0 * t_values[k])
+
+    # System of Differential Equations
     i_values[k+1] = i_values[k] + (V - i_coeff * i_values[k] -q_coeff * q_values[k]) * dt
     q_values[k+1] = q_values[k] + i_values[k] * dt
 
