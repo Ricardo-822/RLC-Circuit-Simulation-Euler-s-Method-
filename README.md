@@ -36,7 +36,7 @@ Rearranging for di/dt:
 \frac{di}{dt}=E(t)-\frac{R}{L}i+\frac{1}{LC}q
 ```
 
-We now have our system of differential equations
+With that, we have out system of First-Order Differential Equations
 
 ## System of First-Order Differential Equations
 ### Equation 1:
