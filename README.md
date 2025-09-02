@@ -7,5 +7,42 @@ Euler's Method is not the most accurate or computationally efficient method of n
 ## RLC Circuit Second-Order Differential Equation
 The differential equation for a series RLC circuit is typically denoted as follows:
 ```math
-L\frac{d^{2}q}{dt^{2}}+R\frac{dq}{dt}+\frac{1}{c}q=E(t)
+L\frac{d^{2}q}{dt^{2}}+R\frac{dq}{dt}+\frac{1}{C}q=E(t)
+```
+
+Recall that:
+```math
+\frac{dq}{dt} = i
+```
+
+Given this, we can rewrite the equation as:
+```math
+L\frac{di}{dt}+Ri+\frac{1}{C}q=E(t)
+```
+
+Rearranging for di/dt:
+```math
+\frac{di}{dt}=E(t)-\frac{R}{L}i+\frac{1}{LC}q
+```
+
+We now have our system of differential equations
+
+## System of First-Order Differential Equations
+### Equation 1:
+```math
+\frac{di}{dt}=E(t)-\frac{R}{L}i+\frac{1}{LC}q
+```
+### Equation 2:
+```math
+\frac{dq}{dt} = i
+```
+
+## Applying Euler's Method
+### Equation 1:
+```math
+i_{n+1}=E(t)-\frac{R}{L}i_{n}-\frac{1}{LC}q_{n} \Delta t + i_{n}
+```
+### Equation 2:
+```math
+q_{n+1}= i_{n}\Delta t + q_{n}
 ```
