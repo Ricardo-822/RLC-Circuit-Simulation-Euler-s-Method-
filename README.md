@@ -21,6 +21,12 @@ The differential equation for a series RLC circuit is typically denoted as follo
 L\frac{d^{2}q}{dt^{2}}+R\frac{dq}{dt}+\frac{1}{C}q=E(t)
 ```
 
+The voltage source is defined as:
+```math
+E(t) = E_{o}cos(w_{o}t)
+```
+<br/>
+
 To apply Euler's method we want to turn this Second-Order Differential Equation into a system of First-Order Differential Equations. <br/> <br/>
 
 Since the currents of the inductor and capacitor are the same, we can write:
@@ -37,6 +43,7 @@ Rearranging for di/dt:
 ```math
 \frac{di}{dt}=E(t)-\frac{R}{L}i-\frac{1}{LC}q
 ```
+<br/>
 
 With that, we have our system of First-Order Differential Equations
 
