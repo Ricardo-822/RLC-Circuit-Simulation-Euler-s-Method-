@@ -35,7 +35,7 @@ L\frac{di}{dt}+Ri+\frac{1}{C}q=E(t)
 
 Rearranging for di/dt:
 ```math
-\frac{di}{dt}=E(t)-\frac{R}{L}i+\frac{1}{LC}q
+\frac{di}{dt}=E(t)-\frac{R}{L}i-\frac{1}{LC}q
 ```
 
 With that, we have our system of First-Order Differential Equations
@@ -43,7 +43,7 @@ With that, we have our system of First-Order Differential Equations
 ## System of First-Order Differential Equations
 ### Equation 1:
 ```math
-\frac{di}{dt}=E(t)-\frac{R}{L}i+\frac{1}{LC}q
+\frac{di}{dt}=E(t)-\frac{R}{L}i-\frac{1}{LC}q
 ```
 ### Equation 2:
 ```math
@@ -65,7 +65,7 @@ q_{n+1}= q_{n} + (i_{n})\Delta t
 To find the natural response of an RLC circuit, E(t) must equal zero. Our system of First-Order Differential Equations becomes:
 ### Equation 1:
 ```math
-\frac{di}{dt}=-\frac{R}{L}i+\frac{1}{LC}q
+\frac{di}{dt}=-\frac{R}{L}i-\frac{1}{LC}q
 ```
 ### Equation 2:
 ```math
