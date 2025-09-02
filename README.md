@@ -58,3 +58,25 @@ i_{n+1} = i_{n} + (E(t)-\frac{R}{L}i_{n}-\frac{1}{LC}q_{n}) \Delta t
 q_{n+1}= q_{n} + (i_{n})\Delta t
 ```
 
+## Natural Response of RLC Circuit
+
+To find the natural response of an RLC circuit, E(t) must equal zero. Our system of First-Order Differential Equations becomes:
+### Equation 1:
+```math
+\frac{di}{dt}=-\frac{R}{L}i+\frac{1}{LC}q
+```
+### Equation 2:
+```math
+\frac{dq}{dt} = i
+```
+
+## Applying Euler's Method (Natural Response)
+
+### Equation 1:
+```math
+i_{n+1} = i_{n} + (-\frac{R}{L}i_{n}-\frac{1}{LC}q_{n}) \Delta t 
+```
+### Equation 2:
+```math
+q_{n+1}= q_{n} + (i_{n})\Delta t
+```
