@@ -21,6 +21,8 @@ The differential equation for a series RLC circuit is typically denoted as follo
 L\frac{d^{2}q}{dt^{2}}+R\frac{dq}{dt}+\frac{1}{C}q=E(t)
 ```
 
+To apply Euler's method we want to turn this Second-Order Differential Equation into a system of First-Order Differential Equations. <br/> <br/>
+
 Recall that:
 ```math
 \frac{dq}{dt} = i
