@@ -21,7 +21,7 @@ The differential equation for a series RLC circuit is typically denoted as follo
 L\frac{d^{2}q}{dt^{2}}+R\frac{dq}{dt}+\frac{1}{C}q=E(t)
 ```
 
-The voltage source is defined as:
+The voltage source E(t) is defined as:
 ```math
 E(t) = E_{o}cos(w_{o}t)
 ```
