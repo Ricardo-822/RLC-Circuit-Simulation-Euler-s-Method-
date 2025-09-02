@@ -51,9 +51,10 @@ With that, we have our system of First-Order Differential Equations
 ## Applying Euler's Method
 ### Equation 1:
 ```math
-i_{n+1}=E(t)-\frac{R}{L}i_{n}-\frac{1}{LC}q_{n} \Delta t + i_{n}
+i_{n+1} = i_{n} + (E(t)-\frac{R}{L}i_{n}-\frac{1}{LC}q_{n}) \Delta t 
 ```
 ### Equation 2:
 ```math
-q_{n+1}= i_{n}\Delta t + q_{n}
+q_{n+1}= q_{n} + (i_{n})\Delta t
 ```
+
