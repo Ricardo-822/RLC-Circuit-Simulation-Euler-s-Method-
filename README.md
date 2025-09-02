@@ -23,7 +23,7 @@ L\frac{d^{2}q}{dt^{2}}+R\frac{dq}{dt}+\frac{1}{C}q=E(t)
 
 To apply Euler's method we want to turn this Second-Order Differential Equation into a system of First-Order Differential Equations. <br/> <br/>
 
-Recall that:
+Since the currents of the inductor and capacitor are the same, we can write:
 ```math
 \frac{dq}{dt} = i
 ```
