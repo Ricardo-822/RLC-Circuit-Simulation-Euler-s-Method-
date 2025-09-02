@@ -4,6 +4,17 @@ This project aims to showcase how Euler's Method could be used to numerically so
 ## Acknowledgement
 Euler's Method is not the most accurate or computationally efficient method of numerically solving differential equations. This is simply showcasing how Euler's Method and other numerical analysis methods could be applied to problems in Electrical Engineering.
 
+## Units
+
+| Quantity        | Base Unit | Symbol |
+| --------------- | --------- | ------ |
+| Resistance      | Ohm       |   R    |
+| Inductance      | Henry     |   L    |
+| Capacitance     | Farad     |   C    |
+| Electric Charge | Coulomb   |   q    |
+| Electric Current| Ampere    |   i    |
+
+
 ## RLC Circuit Second-Order Differential Equation
 The differential equation for a series RLC circuit is typically denoted as follows:
 ```math
